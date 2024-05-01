@@ -16,6 +16,10 @@ body {
     background-color: rgb(18, 18, 18);
     position: relative;
 }
+.nav-title a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .nav>.nav-header {
     display: inline;
@@ -228,7 +232,7 @@ input::placeholder{
 
 .main_last{
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;

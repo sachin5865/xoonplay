@@ -17,6 +17,10 @@ body{
     position: relative;
 
 }
+.nav-title a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .nav>.nav-header {
     display: inline;
@@ -267,7 +271,7 @@ body{
         object-fit: cover;
     }
 }
-
+/* -------------------------------------------------------------------------- */
 .container_3 {
     display: flex;
     justify-content: space-between;
@@ -661,7 +665,7 @@ body{
 
  .main_last{
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
