@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="venues.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -15,7 +18,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
                 <div class="nav-title">
-                    <a href="./index.html">logo</a>
+                    <a href="./index.html"><img src="./images/logo.png" alt=""></a>
                 </div>
             </div>
             <div class="nav-btn">
@@ -38,36 +41,43 @@
         </div>
     </header>
 
-
-
     <!-- ------------------------------------------------------------------------- -->
-
-
     <div class="main">
         <div class="container">
             <div class="headings">
                 <h1>Discover the Best <br> venues in <span>Town</span></h1>
-                <div class="input_icons">
-                    <input class="input_field" type="text" placeholder="Enter your area/city">
+                <div class="input_with_button">
+                    <div class="inputWithIcon">
+                        <input type="text" placeholder="Enter your area/city">
+                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="button_area">
+                        <a href=""><button>locate me</button></a>
+                    </div>
                 </div>
+
                 <div class="button_loction">
-                    <a href="chennai.html"><button>Chennai</button></a>
+                    <a href="chennai.html"><button><span><img src="./images/temple.png"
+                                    alt=""></span>Chennai</button></a>
                 </div>
             </div>
             <div class="image">
                 <img src="images/v111.webp" alt="image">
             </div>
-            
-
         </div>
     </div>
+
+     <!-- /* ------------------------Create a Scroll To Top Button-------------------------------------- */ -->
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="las la-arrow-up"></i></button>
+
     <!-- -----------------------------------------------------------------? -->
 
     <footer class="main_last">
         <div class="container_last">
             <div class="image_last">
                 <div class="first">
-                    <img src="/images/Frame 10.png" alt="image">
+                    <img src="/images/logo.png" alt="image">
                 </div>
                 <div class="second_last">
                     <div class="second">
@@ -101,7 +111,7 @@
 
         </div>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>

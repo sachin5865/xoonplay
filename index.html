@@ -6,38 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>  <!--------------------------------------------NAVBAR SECTION  ----------------------------------------->
+    <header> <!--------------------------------------------NAVBAR SECTION  ----------------------------------------->
         <div class="nav">
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
-              <div class="nav-title">
-                <a href="./index.html">logo</a>
-              </div>
+                <div class="nav-title">
+                    <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+                </div>
             </div>
             <div class="nav-btn">
-              <label for="nav-check">  
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
+
             <div class="nav-links">
-              <a href="./venues.html" target="">Venues</a>
-              <a href="./shop.html" target="">Shop</a>
-              <a href="" target="">Coaching</a>
-             
-              <a href="">
-                <button>REGISTER YOUR VENUE</button>
-              </a>
-              
+                <a href="./venues.html" target="">Venues</a>
+                <a href="./shop.html" target="">Shop</a>
+                <a href="" target="">Coaching</a>
+                <a href="" button></a>
+                <a href="">
+                    <button>REGISTER YOUR VENUE</button>
+                </a>
             </div>
-          </div>
+        </div>
     </header>
     <!-- ------------------------------------------------------------------------------------------------------ -->
     <div class="main">
@@ -46,14 +48,17 @@
                 <h1>The easiest way to <br> meet <span>new player</span></h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 <a href="#contact" class="contact-button">
-                    Start playing
-                </a>
+                    Start playing <span><i class="lab la-google-play"></i></span> <span><i
+                            class="lab la-apple"></i></span> </a>
             </div>
             <div class="image">
                 <img src="images/111.jpg" alt="image">
             </div>
         </div>
     </div>
+    <!-- /* ------------------------Create a Scroll To Top Button-------------------------------------- */ -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="las la-arrow-up"></i></button>
     <!-- ----------------------------------------------------------------------------------- -->
     <div class="main_2">
         <div class="container_2">
@@ -93,95 +98,96 @@
             </div>
         </div>
     </div>
-<!-- -------------------------------------REVIEWS SECTION-------------------------------- -->
+    <!-- -------------------------------------REVIEWS SECTION-------------------------------- -->
 
-<!-- Main Container for Clients Review -->
-<div class="container_review">
-    <h2> Our Happy Clients </h2>
+    <!-- Main Container for Clients Review -->
+    <div class="container_review">
+        <h2> Our Happy Clients </h2>
 
 
-    <!-- Clients Review Section -->
-    <div class="reviewSection">
+        <!-- Clients Review Section -->
+        <div class="reviewSection">
 
-    <!-- Clients Review-1 Section Starts from Here  -->
-        <div class="reviewItem">
-            <div class="top">
-                <div class="clientImage">
-                    <img src="./images/badminton/badminton-1.jpeg" alt="">
-                    <span>Raju Sheoran</span>
+            <!-- Clients Review-1 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./images/badminton/badminton-1.jpeg" alt="">
+                        <span>Raju Sheoran</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                </ul>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
             </div>
-            <article>
-                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                    facere exercitationem!</p>
-                <p>Jan 01, 2023</p>
-            </article>
-        </div>
 
-    <!-- Clients Review-2 Section Starts from Here  -->
-        <div class="reviewItem">
-            <div class="top">
-                <div class="clientImage">
-                    <img src="./images/baskitball/download.jpeg" alt="">
-                    <span>Raju Sheoran</span>
+            <!-- Clients Review-2 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./images/baskitball/download.jpeg" alt="">
+                        <span>Raju Sheoran</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                </ul>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
             </div>
-            <article>
-                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                    facere exercitationem!</p>
-                <p>Jan 01, 2023</p>
-            </article>
-        </div>
 
-    <!-- Clients Review-3 Section Starts from Here  -->
-        <div class="reviewItem">
-            <div class="top">
-                <div class="clientImage">
-                    <img src="./images/football/download.jpeg" alt="">
-                    <span>Raju Sheoran</span>
+            <!-- Clients Review-3 Section Starts from Here  -->
+            <div class="reviewItem">
+                <div class="top">
+                    <div class="clientImage">
+                        <img src="./images/football/download.jpeg" alt="">
+                        <span>Raju Sheoran</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                    <li><i class="fa-regular fa-star"></i></li>
-                </ul>
+                <article>
+                    <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                        voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                        facere exercitationem!</p>
+                    <p>Jan 01, 2023</p>
+                </article>
             </div>
-            <article>
-                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
-                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
-                    facere exercitationem!</p>
-                <p>Jan 01, 2023</p>
-            </article>
         </div>
     </div>
-</div>
+    
 
-<!-- .........................................END ReviewS SECTION---------------------------------- -->
-    <!-- ------------------------------------------------------------------------------------------------- -->
+    <!-- .........................................END ReviewS SECTION---------------------------------- -->
+    <!-- --------------------------------------------footer----------------------------------------------------- -->
 
     <footer class="main_last">
         <div class="container_last">
             <div class="image_last">
                 <div class="first">
-                    <img src="/images/Frame 10.png" alt="image">
+                    <img src="/images/logo.png" alt="image">
                 </div>
                 <div class="second_last">
                     <div class="second">
@@ -215,6 +221,7 @@
 
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop_payment.css">
+    <title>payment</title>
+</head>
+<body>
+    <header>  <!--------------------------------------------NAVBAR SECTION  ----------------------------------------->
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <a href="./index.html">logo</a>
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">  
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="nav-links">
+              <a href="./venues.html" target="">Venues</a>
+              <a href="./shop.html" target="">Shop</a>
+              <a href="" target="">Coaching</a>
+             
+              <a href="">
+                <button>REGISTER YOUR VENUE</button>
+              </a>
+              
+            </div>
+          </div>
+    </header>
+
+
+
+
+<!-- -------------------------------------main section------------------------------------ -->
+    <div class="main_pay">
+        <div class="container_pay">
+            <div class="side_left">
+                <div class="container_buy">
+                    <div class="contact-details">
+                        <h2>Contact Details</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="payment_section">
+                        <div class="payment-details">
+                            <h2>Payment Details</h2>
+                            <label for="card">Card Number:</label>
+                            <input type="text" id="card" name="card" required>
+                            <label for="expiry">Expiry Date:</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" required>
+                        </div>
+                    </div>
+                    <div class="delivery_section">
+                        <div class="delivery-details">
+                            <h2>Delivery Details</h2>
+                            <label for="address">Address:</label>
+                            <textarea id="address" name="address" required></textarea>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" id="zipcode" name="zipcode" required>
+                        </div>
+                    </div>
+                    <button onclick="submitForm()">Pay</button>
+                </div>
+            </div>
+            <div class="side_right">
+                <div class="images_pay">
+                    <img src="./images/shop/all/card_3.webp" alt="">
+                </div>
+                <div class="order_details">
+                    <!-- <h1>GRASSHOPPER Clubman Cricket Leather Ball</h1> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- .........................................END ReviewS SECTION---------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+    <footer class="main_last">
+        <div class="container_last">
+            <div class="image_last">
+                <div class="first">
+                    <img src="/images/Frame 10.png" alt="image">
+                </div>
+                <div class="second_last">
+                    <div class="second">
+                        <img src="/images/app-store-de-data.png" alt="image">
+                    </div>
+                    <div class="third">
+                        <img src="/images/google-play.png" alt="image">
+                    </div>
+                </div>
+                <div class="heading_last">
+                    <h3>Design for sport & made Made in Chennai</h3>
+                </div>
+            </div>
+
+            <div class="footer_one">
+                <div class="company_one">
+                    <li class="color_white">company</li>
+                    <li>contact Us</li>
+                    <li>Blog</li>
+                    <li>Term Of Service</li>
+                    <li>Privacy Policy</li>
+                </div>
+                <div class="social_one">
+                    <li class="color_white">Social</li>
+                    <li>instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="shop_payment.js"></script>
+</body>
+</html>

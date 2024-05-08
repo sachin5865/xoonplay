@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="inner_section.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
 
     <title>Document</title>
 </head>
@@ -18,7 +19,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
                 <div class="nav-title">
-                    <a href="./index.html">logo</a>
+                    <a href="./index.html"><img src="./images/logo.png" alt=""></a>
                 </div>
             </div>
             <div class="nav-btn">
@@ -43,7 +44,12 @@
     </header>
 
 
-    <!-- -----------------------------------navbar end ----------------------------------- -->
+    <!-- 
+         /* ------------------------Create a Scroll To Top Button-------------------------------------- */ -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="las la-arrow-up"></i></button>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- -----------------------------------navbar end ----------------------------------- --> -->
 
     <div class="main_section">
         <div class="all_container">
@@ -86,7 +92,7 @@
                     <h2>Football . 4.5 (46 ratings)</h2>
                 </div>
                 <div class="button">
-                    <button>Book Now</button>
+                    <a href="./booking.html"><button>Book Now</button></a>
                 </div>
             </div>
         </div>
@@ -101,16 +107,52 @@
                     <h1>Address</h1>
                     <h4>17, Lakshmi Street, Alagappa Nagar, Kilpauk</h4>
                 </div>
-
-                <div class="button_one">
-                    <button>Get Direction</button>
+                <div class="buttons">
+                    <div class="button_one">
+                        <button>Get Direction</button>
+                    </div>
+                    <div class="button_two">
+                        <a href="#"><button><i class="las la-phone-volume"></i></button></a>
+                    </div>
                 </div>
+
             </div>
             <div class="container_two">
                 <div class="heading_two">
                     <h1>Venue Info</h1>
-                    <h3>5v5</h3>
-
+                </div>
+                <div class="heading_two_button">
+                    <h3>picth</h3>
+                    <h2>..Nets</h2>
+                </div>
+                <div class="images_headings">
+                    <div class="first_img">
+                        <img src="./images/cricket_equipment.webp" alt="">
+                        <h2>Bring Your Equipment</h2>
+                    </div>
+                    <div class="second_img">
+                        <img src="./images/artificial turf.webp" alt="">
+                        <h2>Artificial Turf</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container_three">
+                <div class="heading_three">
+                    <h1>Amenities</h1>
+                </div>
+                <div class="all_lists">
+                    <div class="first_col">
+                        <h3><span><i class="las la-money-bill-alt"></i></span>UPI Accepted</h3>
+                        <h3><span><i class="las la-tshirt"></i></span>Changing Rooms</h3>
+                    </div>
+                    <div class="second_col">
+                        <h3><span><i class="las la-credit-card"></i></span>Card Accepted</h3>
+                        <h3><span><i class="las la-car"></i></span>Free Parking</h3>
+                    </div>
+                    <div class="third_col">
+                        <h3><span><i class="las la-toilet"></i></span>Toilets</h3>
+                        <h3><span><i class="las la-cloud-showers-heavy"></i></span>Showers</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +206,6 @@
         <section id="testimonials">
             <div class="testimonial-heading">
                 <span>Comments</span>
-               
             </div>
             <div class="testimonial-box-container">
                 <div class="testimonial-box">
@@ -294,7 +335,7 @@
         <div class="container_last">
             <div class="image_last">
                 <div class="first">
-                    <img src="./images/Frame 10.png" alt="image">
+                    <img src="./images/logo.png" alt="image">
                 </div>
                 <div class="second_last">
                     <div class="second">
@@ -332,7 +373,7 @@
 
 
 
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
