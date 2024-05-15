@@ -44,7 +44,7 @@ body {
     padding: 5px 30px;
     border-radius: 50px;
     color: #fff;
-    background-color: blueviolet;
+    background-color:  #5254f8;
 
 
 }
@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: blueviolet;  
+    background-color:  #5254f8;  
 }
 /* -----------------------container_2---------------------------------------- */
 
@@ -92,7 +92,7 @@ body {
    padding: 5px;
 }
 .days_months h4:hover{
-    background-color: blueviolet;
+    background-color:  #5254f8;
  }
 
 /* ---------------------------------------------------- */
@@ -143,21 +143,38 @@ body {
 .icon i{
     padding: 5px;
     font-size: 40px;
-    color: blueviolet   ;
+    color:  #5254f8   ;
 }
 .heading_two h3{
     padding:  0px 5px;
 }
 /* -------------------------------------------------- */
 .container_4{
-    height: 30vh;
+    height: 10vh;
     width: 80%;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #fff;
-    border: 2px solid red;
     margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
+.heading_time{
+    display: flex;
+    color: #fff;
+}
+.heading_time h2{
+    padding: 0px 4rem;
+}
+.moon i{
+    font-size: 30px;
+    color: burlywood;
+    margin-right: 5px;
+}
+.heading_time h2:hover{
+    border-radius: 20px;
+    background-color:  #5254f8;
+}
+
 /* -------------------------------------------------------- */
 .button_book{
     padding-bottom: 20px;
