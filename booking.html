@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="booking.css">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Booking-Page</title>
 </head>
 
@@ -27,7 +28,7 @@
                     <span></span>
                 </label>
             </div>
-    
+
             <div class="nav-links">
                 <a href="./venues.html" target="">Venues</a>
                 <a href="./shop.html" target="">Shop</a>
@@ -86,14 +87,14 @@
                     </div>
                 </div>
             </div>
-<!-- ----------------------------------------------------------- -->
+            <!-- ----------------------------------------------------------- -->
             <div class="container_3">
                 <div class="offer_section">
                     <div class="inner_headings">
                         <div class="offer_heading">
                             <h5>MIN 2 HRS</h5>
                         </div>
-                        
+
                         <div class="icon">
                             <i class="las la-percentage"></i>
                         </div>
@@ -108,7 +109,7 @@
                         <div class="offer_heading">
                             <h5>MIN 2 HRS</h5>
                         </div>
-                        
+
                         <div class="icon">
                             <i class="las la-percentage"></i>
                         </div>
@@ -119,64 +120,173 @@
                     </div>
                 </div>
             </div>
-<!-- --------------------------------------------------------------->
+            <!-- --------------------------------------------------------------->
             <div class="container_4">
-                <div class="heading_time">
+                <!-- <div class="heading_time">
                     <h2 class="moon"><i class="las la-moon"></i>Twilight</h2>
                     <h2 class="moon"><i class="las la-cloud-sun"></i></i>Morning</h2>
                     <h2 class="moon"><i class="las la-sun"></i>Noon</h2>
                     <h2 class="moon"><i class="las la-cloud-moon"></i>Evening</h2>
+                </div> -->
+
+
+                <!-- <div class="app-time">
+                    <div>
+                        <p>Timings</p>
+                        <p>9:00AM to 12:00PM</p>
+                        <div class="app-check">
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">9:00 AM
+                                </label>
+                            </div>
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">9:30 AM
+                                </label>
+                            </div>
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">10:00 AM
+                                </label>
+                            </div>
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">10:30 AM
+                                </label>
+                            </div>
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">11:00 AM
+                                </label>
+                            </div>
+                            <input type="radio" class="option-input radio" name="example" />
+                            <div class="app-border">
+
+                                <label class="app-label">11:30 AM
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="container">
+                    <div class="tabs">
+                        <button class="tab" onclick="showSlots('twilight')">Twilight</button>
+                        <button class="tab" onclick="showSlots('morning')">Morning</button>
+                        <button class="tab" onclick="showSlots('noon')">Noon</button>
+                        <button class="tab" onclick="showSlots('evening')">Evening</button>
+                    </div>
+                    <div class="slots-container" id="slots-container">
+                        <div class="slots twilight">
+                            <p>Timings</p>
+                            <p>9:00AM to 12:00PM</p>
+                            <div class="time-slots">
+                                <button class="time-slot">9:00 AM</button>
+                                <button class="time-slot">9:30 AM</button>
+                                <button class="time-slot">10:00 AM</button>
+                                <button class="time-slot">10:30 AM</button>
+                                <button class="time-slot">11:00 AM</button>
+                                <button class="time-slot">11:30 AM</button>
+                            </div>
+                        </div>
+                        <div class="slots morning">
+                            <p>Timings</p>
+                            <p>6:00AM to 9:00AM</p>
+                            <div class="time-slots">
+                                <button class="time-slot">6:00 AM</button>
+                                <button class="time-slot">6:30 AM</button>
+                                <button class="time-slot">7:00 AM</button>
+                                <button class="time-slot">7:30 AM</button>
+                                <button class="time-slot">8:00 AM</button>
+                                <button class="time-slot">8:30 AM</button>
+                            </div>
+                        </div>
+                        <div class="slots noon">
+                            <p>Timings</p>
+                            <p>12:00PM to 3:00PM</p>
+                            <div class="time-slots">
+                                <button class="time-slot">12:00 PM</button>
+                                <button class="time-slot">12:30 PM</button>
+                                <button class="time-slot">1:00 PM</button>
+                                <button class="time-slot">1:30 PM</button>
+                                <button class="time-slot">2:00 PM</button>
+                                <button class="time-slot">2:30 PM</button>
+                            </div>
+                        </div>
+                        <div class="slots evening">
+                            <p>Timings</p>
+                            <p>3:00PM to 6:00PM</p>
+                            <div class="time-slots">
+                                <button class="time-slot">3:00 PM</button>
+                                <button class="time-slot">3:30 PM</button>
+                                <button class="time-slot">4:00 PM</button>
+                                <button class="time-slot">4:30 PM</button>
+                                <button class="time-slot">5:00 PM</button>
+                                <button class="time-slot">5:30 PM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_book">
+                        <a href="./add_player.html"><button>Book Now</button></a>
+                    </div>
                 </div>
+                <!-- -------------------------------------------------------------------- -->
+<!-- 
             </div>
-<!-- -------------------------------------------------------------------- -->
-            
+            <div class="button_book">
+                <a href="./add_player.html"><button>Book Now</button></a>
+            </div> -->
         </div>
-        <div class="button_book">
-            <a href="./add_player.html"><button>Book Now</button></a>
-          </div>
-    </div>
 
 
-   <!-- --------------------------------------------footer----------------------------------------------------- -->
+        <!-- --------------------------------------------footer----------------------------------------------------- -->
 
-   <footer class="main_last">
-    <div class="container_last">
-        <div class="image_last">
-            <div class="first" id="footer_logo">
-                <img src="/images/logo3333.png" alt="image">
-            </div>
-            <div class="second_last">
-                <div class="second">
-                    <img src="/images/app-store-de-data.png" alt="image">
+        <footer class="main_last">
+            <div class="container_last">
+                <div class="image_last">
+                    <div class="first" id="footer_logo">
+                        <img src="/images/logo3333.png" alt="image">
+                    </div>
+                    <div class="second_last">
+                        <div class="second">
+                            <img src="/images/app-store-de-data.png" alt="image">
+                        </div>
+                        <div class="third">
+                            <img src="/images/google-play.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="heading_last">
+                        <h3>Design for sport & made Made in Chennai</h3>
+                    </div>
                 </div>
-                <div class="third">
-                    <img src="/images/google-play.png" alt="image">
+
+                <div class="footer_one">
+                    <div class="company_one">
+                        <li class="color_white">company</li>
+                        <li>contact Us</li>
+                        <li>Blog</li>
+                        <li>Term Of Service</li>
+                        <li>Privacy Policy</li>
+                    </div>
+                    <div class="social_one">
+                        <li class="color_white">Social</li>
+                        <li>instagram</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Facebook</li>
+                    </div>
                 </div>
-            </div>
-            <div class="heading_last">
-                <h3>Design for sport & made Made in Chennai</h3>
-            </div>
-        </div>
 
-        <div class="footer_one">
-            <div class="company_one">
-                <li class="color_white">company</li>
-                <li>contact Us</li>
-                <li>Blog</li>
-                <li>Term Of Service</li>
-                <li>Privacy Policy</li>
             </div>
-            <div class="social_one">
-                <li class="color_white">Social</li>
-                <li>instagram</li>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-                <li>Facebook</li>
-            </div>
-        </div>
+        </footer>
 
-    </div>
-</footer>
+        <script src="./booking.js"></script>
 </body>
 
 </html>
